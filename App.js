@@ -1,12 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
+import { NativeBaseProvider } from 'native-base';
 import { StyleSheet, Text, View } from 'react-native';
+import AnimalList from './component/animal/AnimalList';
+import AnimalDetail from './component/Detail/AnimalDetail';
+import TypeDetail from './component/Detail/TypeDetail';
+import Home from "./component/Home/home"
+import TypeList from './component/type/TypeList';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+        <NativeBaseProvider>
+        {/* <Home /> */}
+        {/* <AnimalList /> */}
+        {/* <AnimalDetail /> */}
+        {/* <TypeDetail /> */}
+        {/* <TypeList /> */}
+        </NativeBaseProvider>
+        </>
   );
 }
 
